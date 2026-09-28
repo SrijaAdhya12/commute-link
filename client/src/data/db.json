@@ -1,0 +1,260 @@
+{
+    "nodalPoints": [
+        {
+            "id": 1,
+            "name": "Hebbal"
+        },
+        {
+            "id": 8,
+            "name": "Jalahalli"
+        },
+        {
+            "id": 3,
+            "name": "Malleshwaram"
+        },
+        {
+            "id": 2,
+            "name": "Mekhri Circle"
+        },
+        {
+            "id": 6,
+            "name": "Nagawara"
+        },
+        {
+            "id": 5,
+            "name": "Peenya"
+        },
+        {
+            "id": 4,
+            "name": "Rajajinagar"
+        },
+        {
+            "id": 7,
+            "name": "Yelahanka"
+        },
+        {
+            "id": 9,
+            "name": "Mathikere"
+        }
+    ],
+    "timeSlots": [
+        {
+            "id": 1,
+            "label": "07:00 am"
+        },
+        {
+            "id": 2,
+            "label": "07:30 am"
+        },
+        {
+            "id": 3,
+            "label": "08:00 am"
+        },
+        {
+            "id": 4,
+            "label": "08:30 am"
+        },
+        {
+            "id": 5,
+            "label": "09:00 am"
+        },
+        {
+            "id": 6,
+            "label": "09:30 am"
+        }
+    ],
+    "employees": [
+        {
+            "id": 11,
+            "name": "Ananya Rao",
+            "phone": "9001000011",
+            "homeAddress": "Hebbal, Bengaluru",
+            "nodalPointId": 1,
+            "nodalPoint": "Hebbal"
+        },
+        {
+            "id": 12,
+            "name": "Arjun Nair",
+            "phone": "9001000012",
+            "homeAddress": "Jalahalli, Bengaluru",
+            "nodalPointId": 8,
+            "nodalPoint": "Jalahalli"
+        },
+        {
+            "id": 13,
+            "name": "Kavya Shetty",
+            "phone": "9001000013",
+            "homeAddress": "Malleshwaram, Bengaluru",
+            "nodalPointId": 3,
+            "nodalPoint": "Malleshwaram"
+        },
+        {
+            "id": 14,
+            "name": "Rohan Kulkarni",
+            "phone": "9001000014",
+            "homeAddress": "Mekhri Circle, Bengaluru",
+            "nodalPointId": 2,
+            "nodalPoint": "Mekhri Circle"
+        },
+        {
+            "id": 15,
+            "name": "Meera Iyer",
+            "phone": "9001000015",
+            "homeAddress": "Nagawara, Bengaluru",
+            "nodalPointId": 6,
+            "nodalPoint": "Nagawara"
+        },
+        {
+            "id": 16,
+            "name": "Vikram Hegde",
+            "phone": "9001000016",
+            "homeAddress": "Peenya, Bengaluru",
+            "nodalPointId": 5,
+            "nodalPoint": "Peenya"
+        },
+        {
+            "id": 17,
+            "name": "Priya Menon",
+            "phone": "9001000017",
+            "homeAddress": "Rajajinagar, Bengaluru",
+            "nodalPointId": 4,
+            "nodalPoint": "Rajajinagar"
+        },
+        {
+            "id": 18,
+            "name": "Nikhil Rao",
+            "phone": "9001000018",
+            "homeAddress": "Yelahanka, Bengaluru",
+            "nodalPointId": 7,
+            "nodalPoint": "Yelahanka"
+        },
+        {
+            "id": 19,
+            "name": "Sanjana Kumar",
+            "phone": "9001000019",
+            "homeAddress": "Mathikere, Bengaluru",
+            "nodalPointId": 9,
+            "nodalPoint": "Mathikere"
+        }
+    ],
+    "cars": [
+        {
+            "id": 21,
+            "ownerId": 11,
+            "ownerName": "Ananya Rao",
+            "type": "SEDAN",
+            "nodalPointId": 1,
+            "nodalPoint": "Hebbal",
+            "timeSlotId": 1,
+            "timeSlot": "07:00 am",
+            "seats": 4,
+            "vacancies": 3,
+            "dropLocation": "TCS Yeshwantpur"
+        },
+        {
+            "id": 22,
+            "ownerId": 12,
+            "ownerName": "Arjun Nair",
+            "type": "SUV",
+            "nodalPointId": 8,
+            "nodalPoint": "Jalahalli",
+            "timeSlotId": 2,
+            "timeSlot": "07:30 am",
+            "seats": 6,
+            "vacancies": 5,
+            "dropLocation": "TCS Yeshwantpur"
+        },
+        {
+            "id": 23,
+            "ownerId": 13,
+            "ownerName": "Kavya Shetty",
+            "type": "HATCHBACK",
+            "nodalPointId": 3,
+            "nodalPoint": "Malleshwaram",
+            "timeSlotId": 3,
+            "timeSlot": "08:00 am",
+            "seats": 4,
+            "vacancies": 4,
+            "dropLocation": "TCS Yeshwantpur"
+        },
+        {
+            "id": 24,
+            "ownerId": 14,
+            "ownerName": "Rohan Kulkarni",
+            "type": "SEDAN",
+            "nodalPointId": 2,
+            "nodalPoint": "Mekhri Circle",
+            "timeSlotId": 4,
+            "timeSlot": "08:30 am",
+            "seats": 4,
+            "vacancies": 2,
+            "dropLocation": "TCS Yeshwantpur"
+        },
+        {
+            "id": 25,
+            "ownerId": 15,
+            "ownerName": "Meera Iyer",
+            "type": "SUV",
+            "nodalPointId": 6,
+            "nodalPoint": "Nagawara",
+            "timeSlotId": 2,
+            "timeSlot": "07:30 am",
+            "seats": 6,
+            "vacancies": 4,
+            "dropLocation": "TCS Yeshwantpur"
+        },
+        {
+            "id": 26,
+            "ownerId": 16,
+            "ownerName": "Vikram Hegde",
+            "type": "HATCHBACK",
+            "nodalPointId": 5,
+            "nodalPoint": "Peenya",
+            "timeSlotId": 5,
+            "timeSlot": "09:00 am",
+            "seats": 4,
+            "vacancies": 3,
+            "dropLocation": "TCS Yeshwantpur"
+        },
+        {
+            "id": 27,
+            "ownerId": 17,
+            "ownerName": "Priya Menon",
+            "type": "SEDAN",
+            "nodalPointId": 4,
+            "nodalPoint": "Rajajinagar",
+            "timeSlotId": 3,
+            "timeSlot": "08:00 am",
+            "seats": 4,
+            "vacancies": 4,
+            "dropLocation": "TCS Yeshwantpur"
+        },
+        {
+            "id": 28,
+            "ownerId": 18,
+            "ownerName": "Nikhil Rao",
+            "type": "SUV",
+            "nodalPointId": 7,
+            "nodalPoint": "Yelahanka",
+            "timeSlotId": 6,
+            "timeSlot": "09:30 am",
+            "seats": 6,
+            "vacancies": 3,
+            "dropLocation": "TCS Yeshwantpur"
+        },
+        {
+            "id": 29,
+            "ownerId": 19,
+            "ownerName": "Sanjana Kumar",
+            "type": "SEDAN",
+            "nodalPointId": 9,
+            "nodalPoint": "Mathikere",
+            "timeSlotId": 4,
+            "timeSlot": "08:30 am",
+            "seats": 4,
+            "vacancies": 3,
+            "dropLocation": "TCS Yeshwantpur"
+        }
+    ],
+    "bookings": []
+}
