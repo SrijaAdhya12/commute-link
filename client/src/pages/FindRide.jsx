@@ -17,7 +17,7 @@ export default function FindRide({ employee, nodalPoints, timeSlots, onBookingCr
         setError('')
         setLoading(true)
         try {
-            const data = await api.getCars({ nodalPointId, timeSlotId })
+            const data = await api.getCars({ nodalPointId, timeSlotId, userId: employee.id })
             setCars(data)
         } catch (e) {
             setError(e.message)

@@ -168,31 +168,43 @@ function nextId(items) {
 }
 
 export const api = {
-    health: () => request('/health'),
-    getNodalPoints: () => request('/api/nodal-points'),
-    getTimeSlots: () => request('/api/time-slots'),
-    createEmployee: (payload) => request('/api/employees', {
-        method: 'POST',
-        body: JSON.stringify(payload),
-    }),
+    health: () => request("/health"),
+    getNodalPoints: () => request("/api/nodal-points"),
+    getTimeSlots: () => request("/api/time-slots"),
+    createEmployee: (payload) =>
+        request("/api/employees", {
+            method: "POST",
+            body: JSON.stringify(payload),
+        }),
     getEmployee: (id) => request(`/api/employees/${id}`),
-    createCar: (payload) => request('/api/cars', {
-        method: 'POST',
-        body: JSON.stringify(payload),
-    }),
-    getCars: ({ nodalPointId, timeSlotId } = {}) => {
-        const params = new URLSearchParams()
-        if (nodalPointId) params.set('nodalPointId', nodalPointId)
-        if (timeSlotId) params.set('timeSlotId', timeSlotId)
-        const query = params.toString()
-        return request(`/api/cars${query ? `?${query}` : ''}`)
+    createCar: (payload) =>
+        request("/api/cars", {
+            method: "POST",
+            body: JSON.stringify(payload),
+        }),
+    getCars: ({ nodalPointId, timeSlotId, userId } = {}) => {
+        const params = new URLSearchParams();
+        if (nodalPointId) params.set("nodalPointId", nodalPointId);
+        if (timeSlotId) params.set("timeSlotId", timeSlotId);
+        const query = params.toString();
+        return request(`/api/cars${query ? `?${query}` : ""}`, {
+            headers: {
+                ...(userId ? { "user-id": userId } : {}),
+            },
+        });
     },
-    createBooking: (payload) => request('/api/bookings', {
-        method: 'POST',
-        body: JSON.stringify(payload),
-    }),
-    getBookings: (employeeId) => request(employeeId ? `/api/bookings?employeeId=${employeeId}` : '/api/bookings'),
-    deleteBooking: (id) => request(`/api/bookings/${id}`, { method: 'DELETE' }),
-}
+    createBooking: (payload) =>
+        request("/api/bookings", {
+            method: "POST",
+            body: JSON.stringify(payload),
+        }),
+    getBookings: (employeeId) =>
+        request(
+            employeeId
+                ? `/api/bookings?employeeId=${employeeId}`
+                : "/api/bookings",
+        ),
+    deleteBooking: (id) => request(`/api/bookings/${id}`, { method: "DELETE" }),
+};
 
 export { API_BASE_URL }
